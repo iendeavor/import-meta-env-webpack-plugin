@@ -45,9 +45,9 @@ new ImportMetaEnvWebpackPlugin({
 });
 ```
 
-> Variables coming from process.env are always strings.
+> Variables coming from `process.env` are always strings.
 
-> Default values of null and undefined behave differently. Use undefined for variables that must be provided during bundling, or null if they are optional.
+> Default values of `null` and `undefined` behave differently. Use `undefined` for variables that must be provided during bundling, or `null` if they are optional.
 
 ### Example
 
@@ -75,7 +75,7 @@ if (false) {
 }
 ```
 
-Running DEBUG=false webpack yields:
+Running `DEBUG=false webpack` yields:
 
 ```js
 if ("world" === "webpack") {
